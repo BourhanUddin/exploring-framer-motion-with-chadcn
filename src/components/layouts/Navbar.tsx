@@ -5,9 +5,11 @@ const Navbar = () => {
   const NabAnimated = {
     hidden: {
       y: -60,
+      height: 0,
     },
     visible: {
       y: 0,
+      height: 48,
       transition: {
         delay: 0.7,
         type: "spring",
@@ -16,13 +18,13 @@ const Navbar = () => {
     },
   };
   return (
-    <header className=" h-16  ">
-      <motion.nav
-        className="w-full h-full flex justify-between items-center px-[20px] max-w-[1220px]  mx-auto"
-        variants={NabAnimated}
-        initial="hidden"
-        animate="visible"
-      >
+    <motion.header
+      className="fixed w-full  z-[999] "
+      variants={NabAnimated}
+      initial="hidden"
+      animate="visible"
+    >
+      <nav className="w-full h-full mx-auto  flex justify-between items-center px-[30px] max-w-[1220px]  ">
         <span className="text-3xl">Fixer</span>
         <ul className=" space-x-4">
           <NavLink to={"/"}>Home</NavLink>
@@ -31,8 +33,8 @@ const Navbar = () => {
           <NavLink to={"/about"}>About Us</NavLink>
           <Button>login</Button>
         </ul>
-      </motion.nav>
-    </header>
+      </nav>
+    </motion.header>
   );
 };
 

@@ -4,6 +4,7 @@ const Home = () => {
   return (
     <>
       <HeroSection></HeroSection>
+      <HeroSection></HeroSection>
     </>
   );
 };
