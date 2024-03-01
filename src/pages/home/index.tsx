@@ -1,10 +1,11 @@
 import HeroSection from "./HeroSection";
+import ServicesSection from "./ServicesSection";
 
 const Home = () => {
   return (
     <>
       <HeroSection></HeroSection>
-      <HeroSection></HeroSection>
+      <ServicesSection></ServicesSection>
     </>
   );
 };
