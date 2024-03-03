@@ -46,9 +46,14 @@ const HeroSection = () => {
   return (
     <div className="overflow-hidden ">
       <Container className="h-[calc(100vh-45px)]  grid grid-cols-1 lg:grid-cols-2 place-content-center mt-10">
-        <motion.div variants={intro} initial="hidden" animate="visible">
+        <motion.div
+          variants={intro}
+          initial="hidden"
+          animate="visible"
+          className="order-last"
+        >
           <motion.h1
-            className="mb-5 text-7xl font-extrabold"
+            className="mb-5 text-7xl font-extrabold  "
             variants={introchildren}
           >
             <span className=" font-extrabold " style={{ color: "#B1B1B1" }}>
@@ -70,10 +75,10 @@ const HeroSection = () => {
           variants={laptopAnimated}
           initial="initial"
           animate="animate"
-          className=" w-2/4 lg:w-full mx-auto "
+          className=" w-2/4 mb-20 lg:w-full mx-auto sm:order-last lg:order-last"
         >
           <img
-            className=" p-5 h-[85%] object-contain "
+            className=" p-5 sm:h-[100%]  lg:h-[85%] object-contain "
             src="./src/assets/images/macbook-exposed.png"
             alt=""
           />
