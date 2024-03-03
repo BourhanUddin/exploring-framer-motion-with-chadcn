@@ -1,4 +1,4 @@
-import ScrollGrow from "@/hooks/ScrollGrow";
+import ScrollGrow from "@/hooks/useScrollGrow";
 import { motion } from "framer-motion";
 import batteryImg from "../../assets/images/trackpad.png";
 const BatteryReplacement = () => {

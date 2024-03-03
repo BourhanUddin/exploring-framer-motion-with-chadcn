@@ -1,7 +1,7 @@
 import { useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-const ScrollGrow = () => {
+const useScrollGrow = () => {
   const componentRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: componentRef,
@@ -18,4 +18,4 @@ const ScrollGrow = () => {
   return {componentRef, style};
 };
 
-export default ScrollGrow;
+export default useScrollGrow;
