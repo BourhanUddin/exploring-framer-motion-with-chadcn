@@ -1,5 +1,6 @@
 import HeroSection from "./HeroSection";
 import ServicesSection from "./ServicesSection";
+import TeamSection from "./TeamSection";
 import WhoWeAreSection from "./WhoWeAreSection";
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
       <HeroSection></HeroSection>
       <WhoWeAreSection></WhoWeAreSection>
       <ServicesSection></ServicesSection>
+      <TeamSection></TeamSection>
     </>
   );
 };

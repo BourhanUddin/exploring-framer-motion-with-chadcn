@@ -7,7 +7,7 @@ const WhoWeAreSection = () => {
   const { style, componentRef } = useScrollGrow();
   return (
     <motion.div
-      className="flex flex-col lg:flex-row justify-between items-center"
+      className="flex my-20 flex-col lg:flex-row justify-between items-center"
       style={style}
       ref={componentRef}
     >
